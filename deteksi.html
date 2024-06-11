@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlzheScan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="images/logo.png" class="logo">
+            <h1>Alzheimer Scan</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="deteksi.html" class="nav-link active">Deteksi</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="tag-detect">
+                <h1>Alzheimer Severity Classification</h1>
+            </div>
+            <div>
+                <img src="images/brain.png" class="logo">
+                <img src="images/arrow.png" class="logo">
+                <img src="images/sevClass.png" class="logo">
+            </div>
+        </main>
+        <upload>
+            <div class="box-up">
+                <div class="box-tag" style="font-weight: bolder;">Upload Image</div>
+                <div class="box-img" id="drop-area">
+                    <div>
+                        <img src="images/img-icon.png" id="preview-img" alt="Image Preview" style="max-width: 50%; max-height: 300px;">
+                    </div>
+                    <div>
+                        Drop your image here or <a id="browse-link" href="#">browse</a>
+                        <input type="file" id="file-input" accept="image/*" style="display: none;">
+                    </div>
+                    <div>
+                        <p>Support: jpg, jpeg, png.</p>
+                    </div>
+                </div>
+                <div class="box-button">
+                    <a href="#" id="clear-btn">Clear</a>
+                    <a href="#" id="scan-btn">Scan</a>
+                </div>
+            </div>
+            
+        </upload>
+        <result>
+            <div class="box-out">
+                <div>
+                    <b>Scan Result</b>
+                </div>
+                <div>
+                    <img src="images/brain normal.png" class="img-out" id="result-img">
+                </div>
+                <div class="output">
+                    <p>The severity level is classified as</p>
+                    <p id="output">Non-Demented</p>
+                </div>
+            </div>
+        </result>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
